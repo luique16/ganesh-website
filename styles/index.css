@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    /*background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    animation: animatedBackground 100s linear infinite;*/
+
+    color: #ffffff;
+    font-family: monospace;
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 10000px;
+    }
+}
+
+header {
+    background-color: #2E2C2F;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#header-left {
+    float: left;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 24px;
+}
+
+#ganesh-header-logo {
+    width: 28px;
+    height: auto;
+}
+
+#ganesh-logo-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 20px;
+}
+
+#news-button {
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#header-right button {
+    background-color: #2E2C2F;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#header-right button img {
+    width: 32px;
+    height: auto;
+}
+
+#header-right p {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+main {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#ganesh-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ganesh-center img {
+    width: 60%;
+    height: auto;
+    margin: 0;
+}
+
+#ganesh-center-text {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#presentation-text {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    width: 60%;
+}
+
+#ganesh-about {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 8%;
+    margin-right: 8%;
+    border: 0;
+    padding: 15px 25px;
+    border-radius: 10px;
+
+    background-color: #27262694;
+}
+
+#ganesh-about h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#about-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    background-color: #27262694;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 9rem;
+    border: 1px solid #737373;
+    border-radius: 3px;
+}
+
+#about-button:hover {
+    background-color: #737373;
+    color: #ffffff;
+    animation: pulse 0.5s; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#blank-space {
+    margin-top: 10rem;
+}
+
+footer {
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+
+    height: 80px;
+}
+
+#footer-left {
+    float: left;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 24px;
+}
+
+#footer-left a {
+    margin-right: 10px;
+}
+
+#footer-left a:hover {
+    animation: pulse 0.5s;
+}
+
+#footer-left a img {
+    width: 35px;
+}
+
+#footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+@media (max-width: 500px) {
+    #header-left {
+        justify-content: left;
+        margin-left: 10px;
+        width: 150px;
+    }
+
+    header * {
+        gap: 0;
+    }
+
+    #news-button {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #header-right {
+        gap: 0;
+    }
+
+    #header-right button img {
+        width: 20px;
+        padding: 0;
+    }
+
+    #header-right button p {
+        font-size: 12px;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        gap: 15%;
+    }
+
+    #footer-right {
+        justify-content: right;
+        align-items: right;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+
+    #footer-left {
+        justify-content: left;
+        margin-left: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: 150px;
+    }
+
+    #footer-left a img {
+        width: 25px;
+    }
+}
