@@ -7,14 +7,14 @@ let languageButton = document.querySelector("#language-button p");
 
 const names = {
     "pt-BR": {
-        "language-buttom": "pt-BR",
+        "language-button": "pt-BR",
         "language-flag": "BR.svg",
         "news-button": "Notícias",
         "about-title": "Sobre o <span style='color: #5EDA4A'>Ganesh</span>",
         "about-button": "Saiba mais",
     },
     "en-US": {
-        "language-buttom": "en-US",
+        "language-button": "en-US",
         "language-flag": "US.svg",
         "news-button": "News",
         "about-title": "About <span style='color: #5EDA4A'>Ganesh</span>",
@@ -23,7 +23,7 @@ const names = {
 }
 
 function updateLanguage() {
-    languageButton.innerText = names[language]["language-buttom"];
+    languageButton.innerText = names[language]["language-button"];
     document.querySelector("#language-button img").src = `assets/${names[language]["language-flag"]}`;
     document.getElementById("news-button").innerText = names[language]["news-button"];
     document.getElementById("presentation-text").innerText = data.informacoes[language.toLowerCase()].subtitulo;
