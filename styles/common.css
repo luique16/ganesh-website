@@ -113,14 +113,33 @@ a {
     margin-top: 10rem;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 footer {
     background-color: #000000;
     padding: 0;
     margin: 0;
     color: #ffffff;
     text-align: center;
-
+    width: 100%;
     height: 80px;
+    position: static;
+}
+
+@media (min-height: 700px) {
+    body:has(main:only-child) footer {
+        position: fixed;
+        bottom: 0;
+    }
 }
 
 #footer-left {
