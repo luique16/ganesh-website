@@ -1,0 +1,17 @@
+{
+  "name": "ganesh-website",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": "git@github.com:luique16/ganesh-website.git",
+  "author": "Luís Henrique <luish.fa1515@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/static": "^8.2.0",
+    "@fastify/view": "^11.1.0",
+    "ejs": "^3.1.10",
+    "fastify": "^5.4.0"
+  }
+}
